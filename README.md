@@ -4,7 +4,7 @@ Handle OXVS Server Communication from browser.
 
 ## Installation
 
-- Download and install `oxvs_browser.js` from the latest release on [GitHub](https://github.com/oxvs/oxvs-client-js/releases)
+- Download and install `oxvs_browser.js` from the [latest release](https://github.com/oxvs/oxvs-client-js/releases/latest)
 
 ## Usage
 
