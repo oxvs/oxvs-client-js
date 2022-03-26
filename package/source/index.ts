@@ -81,7 +81,16 @@ let oxvscs = {
          *   console.log(err)
          * })
          */
-        logout: auth.logout,
+        logout: (props: { ouid: string, token: string }) => {
+            return new Promise((resolve, reject) => {
+                auth.logout(props)
+                    .then(() => {
+                        window.localStorage.removeItem("oxvsUser")
+                        resolve(true)
+                    })
+                    .catch((err: any) => reject(err))
+            })
+        },
 
         /**
          * @func
