@@ -1,0 +1,32 @@
+{
+    "dependencies": {
+        "typescript": "^4.6.2",
+        "vercel": "^24.0.1"
+    },
+    "devDependencies": {
+        "clean-jsdoc-theme": "^3.3.4",
+        "jsdoc": "^3.6.10"
+    },
+    "name": "oxvs-client-js",
+    "version": "0.0.1",
+    "main": "package/dist.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npx tsc; npx jsdoc --configure jsdoc.json --verbose",
+        "deploy": "npm run build; npx vercel --prod"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oxvs/oxvs-client-js.git"
+    },
+    "keywords": [
+        "oxvs-server"
+    ],
+    "author": "oxvsdev",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/oxvs/oxvs-client-js/issues"
+    },
+    "homepage": "https://browser.docs.oxvs.net/",
+    "description": ""
+}

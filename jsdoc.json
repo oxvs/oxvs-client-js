@@ -1,0 +1,59 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "include": ["package/dist.js", "./README.md"],
+        "includePattern": ".js$"
+    },
+
+    "plugins": [
+        "plugins/markdown"
+    ],
+
+    "opts": {
+        "encoding": "utf8",
+        "destination": "docs/",
+        "recurse": true,
+        "verbose": true,
+        "template": "./node_modules/clean-jsdoc-theme",
+        "theme_opts": {
+            "theme": "dark",
+            "title": "oxvs-client-js",
+            "menu": [
+                {
+                    "title": "oxvs",
+                    "id": "oxvshome",
+                    "link": "https://oxvs.net"
+                },
+                {
+                    "title": "Zerobase",
+                    "id": "zerobasehome",
+                    "link": "https://zbase.dev"
+                },
+                {
+                    "title": "Github",
+                    "id": "gitlink",
+                    "link": "https://github.com/oxvs/oxvs-client-js"
+                }
+            ],
+            "resizeable": {
+                "navbar": {
+                    "min": "300",
+                    "max": "600"
+                }
+            },
+            "favicon": "https://zbase.dev/favicon.png",
+            "meta": [
+                {
+                    "name": "Author",
+                    "content": "hkau"
+                },
+                {
+                    "name": "Description",
+                    "content": "Documentation for @oxvs.net/oxvs-client-js"
+                }
+            ]
+        }
+    }
+}
