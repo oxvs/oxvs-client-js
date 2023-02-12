@@ -1,7 +1,7 @@
 {
     "dependencies": {
         "typescript": "^4.6.2",
-        "vercel": "^24.0.1"
+        "vercel": "^28.15.3"
     },
     "devDependencies": {
         "clean-jsdoc-theme": "^3.3.4",
